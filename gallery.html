@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+<script src="static/js/jquery-3.2.0.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="static/css/style1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="TE-top">
+  <div class="TE-bar TE-white TE-padding TE-card" style="letter-spacing:4px;">
+    <a href="#home" class="TE-bar-item TE-button">Gourmet au Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="TE-right TE-hide-small">
+      <a href="#about" class="TE-bar-item TE-button">About</a>
+      <a href="#gallery" class="TE-bar-item TE-button">Gallery</a>
+      <a href="#chat" class="TE-bar-item TE-button">Chat</a>
+      <a href="#contact" class="TE-bar-item TE-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="TE-container TE-left TE-padding-48">
+
+<!-- Grid -->
+<div class="TE-row">
+
+<!-- Blog entries -->
+<div class="TE-col l8 s12">
+  <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+    <img src="/static/images/Mexico.jpg" alt="mexico" style="width:100%">
+    <div class="TE-container">
+      <h3><b>Mexico</b></h3>
+      <h5>Mexico City<span class="TE-opacity">April 7, 2018</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>La Casa Azul, an electric-blue house in Mexico City's Coyoacan district, is more pilgrimage site than museum. That's because it once was home to Frida Kahlo, the famous artist whose work—and mystique—is known and revered around the world. Now it houses a vast collection of her work and personal effects, and is one of the city's most frequented stops for art-loving tourists. But, to visit the densely packed space, or even the grandiose Palacio de Bellas Artes, is to scratch the surface of this constantly-buzzing city's creative scene.</P>
+      <p>New destination-worthy museums open every few years in Mexico's capital: Take 2011's ultra-modern Soumaya, stocked with the personal collection of the multi-billionaire Carlos Slim, and 2013's Museo Jumex, which houses an impressive collection of contemporary art in an imposing, jagged building. And that's not even mentioning the one-room galleries and hole-in-the-wall music venues that pop up seemingly ever week, or the art fairs, like February's Zona Maco, which draws crowds rivaling Art Basel in Miami Beach.</p>
+
+    </div>
+  </div>
+
+ <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+    <img src="static/images/Japan.jpg" alt="Japan" style="width:100%">
+    <div class="TE-container">
+      <h3><b>Japan</b></h3>
+      <h5>Kyoto <span class="TE-opacity">March 16, 2018</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>You'd be forgiven for thinking Kyoto's nickname, the "City of Ten Thousand Shrines," is an exaggeration. But after a walk through its beautifully preserved streets, you'll quickly be correcting your assumption. While it's hard to nail down the exact number of shrines—new ones seemingly pop up overnight—there are at least 1,600 temples within the city limits. There are the world-famous landmarks, of course—think the vermillion gates of Fushimi Inari-taisha and the shimmering Golden Pavilion of Kinkaku-ji. But the truly magical thing about Kyoto is the way you can explore the city, without a guide book or itinerary, and stumble upon Zen gardens, sprawling temple complexes, and immaculately maintained shrines with nary a tourist in site. Its seventeen UNESCO World Heritage sites speak to this ancient capital's cultural significance, but they're really just the beginning when it comes to all the beauty that Kyoto offers.</p>
+    </div>
+  </div>
+
+   <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+    <img src="static/images/Italy.jpg" alt="Italy" style="width:100%">
+    <div class="TE-container">
+      <h3><b>Italy</b></h3>
+      <h5>Rome, <span class="TE-opacity">Feb 12, 2018</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>At its peak, the Roman Empire extended over nearly two million square miles of land across Europe, Asia Minor, and North Africa. Today, that history—and the far-flung influences that made their mark on this ancient capital—are on display everywhere. (Vespas zip by the Roman Forum, which dates back to the seventh century BC, like its no big deal.) The recently restored Colosseum is such a part of the modern city's fabric that after a few days you start taking its grandeur for granted.</p>
+      <p>The city's main attractions are famous not because of tourist hype, but because they really are that impressive—the Trevi Fountain, the Spanish Steps, the Capitoline Museums...the list goes on and on. No wonder it's known as the Eternal City: You could spend forever here and find new artistic and cultural treasures every day.</p>
+    </div>
+  </div>
+
+   <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+    <img src="static/images/Turkey.jpg" alt="Turkey" style="width:100%">
+    <div class="TE-container">
+      <h3><b>Turkey</b></h3>
+      <h5>Istanbul, <span class="TE-opacity">January 5, 2018</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>It's the boundary between two continents; the entry-point into Europe for the Silk Road that extended all the way to the Korean peninsula; a place where you can sip an espresso in a third-wave coffee shop, steps from a Roman aqueduct, while the call to prayer emanates from a mosque that was built in the time of the Ottomans. There are the classics, of course, like the syncretic Hagia Sophia—once a church, then a mosque, and now a museum—and the famous Whirling Dervishes whose entrancing, twirling dance is an act of devotion to their Sufi faith.</p>
+      <p>But under all that history and millennia-old tradition is a thriving, and subversive, hip-hop, contemporary art, and film scene, spurred by creators who use their expression as a way to comment on the turbulent times the country currently finds itself in. To find up-and-coming and established creatives alike, start with a Saturday evening in Karaköy, where Istanbul's old-meets-new aesthetic is in full bloom. Or head to the 15th Istanbul Biennale, taking place from September 16 through November 12, where everything from modern dance to street art will be on display</p>
+    </div>
+  </div>
+
+   <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+    <img src="/static/images/India.jpg" alt="India" style="width:100%">
+    <div class="TE-container">
+      <h3><b>India</b></h3>
+      <h5>Agra, <span class="TE-opacity">December 13, 2017</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>A city immersed in a splendid Mughal charm, Agra needs no introduction. Home to the eternal symbol of love, the iconic ‘Taj Mahal’, Agra finds one of the top most places on the world heritage map. Having to its acclaim of being the only city in the world glittering with three world heritage sites, Agra definitely makes it to the list of popular Indian travel destinations. With its three gems, the impressive Taj Mahal, magnificent Agra Fort and splendid Fatehpur Sikri; the city lures thousands of tourists including historians and art lovers from all across India and the world. From savouring on the city’s authentic and traditional Mughlai flavours, shopping in the lively markets teeming with marble handicrafts adorned with fine inlay carvings and fine leather items, watching the epic of the timeless love between Shah Jahan and his beloved, Noor Jahan coming to life at the ‘Kalakriti Cultural & Convention Center’ to soaking your spirits in the enthralling fiesta of the ‘Taj Mahotsav’, there is much more to do in the historic city of Agra than just exploring its monuments. For a more closer and adventurous face off with this cultural city, get on an off the beaten path journey and explore the narrow alleyways of the old city, ancient temples or visit the renowned poet, Mirza Ghalib’s birthplace.
+    </p>
+  </div>
+  </div>
+
+  <!-- Blog entry -->
+  <div class="TE-card-4 TE-margin TE-white">
+  <img src="/static/images/brazil.jpg" alt="Brazil" style="width:100%">
+    <div class="TE-container">
+      <h3><b>Brazil</b></h3>
+      <h5>Rio de Janeiro, <span class="TE-opacity">November 2, 2017</span></h5>
+    </div>
+
+    <div class="TE-container">
+      <p>The bustling city of Rio de Janeiro has been one of Brazil’s most popular and frequented tourist destinations for decades. Its vibrant city centre is bursting with culture and pulsating with a deep sense of history and heritage. Rio, as it is commonly known, is the second largest city in Brazil and the third largest metropolis in the whole of South America.</p>
+      <p> It is the most visited city in the Southern Hemisphere, which is no mean feat. This makes for an impressive, memorable attraction for visitors from all over the world.</p>
+      <p>Rio de Janeiro is hot for most of the year, and rain is frequent during the period between December and March. The coastal areas are cooler than those situated inland due to the cool breeze blowing off the blue waters of the Atlantic Ocean. The average annual temperature is between 21 and 27 degrees Celsius. The landscape and vegetation in and around this metropolis are magnificent, providing a visual feast that has inspired authors and screenwriters the world over.</p>
+      <p>Because of its many cultural and historical attractions, Rio has implemented fabulous infrastructure to cater to the needs of its visitors. This includes world-class accommodation and plenty of tours. Rio de Janeiro was one of the Host Cities™ for the 2014 FIFA World Cup™, welcoming millions of people as they make their way to this international sporting event. In addition, it did host the 2016 Summer Olympics™, inviting sportsmen and –women, as well as their millions of fans, to focus their attention on this bustling destination. Major efforts have been made to minimise social inequality and modernise the economy of Rio de Janeiro to further improve its global standing. This makes for a very special destination.</p>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="TE-col l4">
+ we will put twitter api here
+
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END TE-content -->
+</div>
+
+<!-- Footer -->
+<footer class="TE-container TE-padding-64 TE-center TE-opacity TE-light-grey TE-xlarge">
+  <i class="fa fa-facebook-official TE-hover-opacity"></i>
+  <i class="fa fa-instagram TE-hover-opacity"></i>
+  <i class="fa fa-snapchat TE-hover-opacity"></i>
+  <i class="fa fa-pinterest-p TE-hover-opacity"></i>
+  <i class="fa fa-twitter TE-hover-opacity"></i>
+  <i class="fa fa-linkedin TE-hover-opacity"></i>
+  <p class="TE-medium">Powered by <a href="https://www.TEschools.com/TEcss/default.asp" target="_blank">TE.css</a></p>
+</footer>
+
+</body>
+</html>
