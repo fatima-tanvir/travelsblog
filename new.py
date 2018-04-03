@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO, emit
 
 app = Flask("MyApp")
@@ -6,21 +6,35 @@ app = Flask("MyApp")
 app.config[ 'SECRET_KEY' ] = 'jsbcfsbfjefebw237u3gdbdc'
 socketio = SocketIO( app )
 
-@app.route("/gallery")
+@app.route("/gallery.html")
 def gallery():
     return render_template("gallery.html")
 
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
+@app.route('/contact.html')
+def index():
+	return render_template('contact.html')
 
-@app.route("/home")
+@app.route('/process', methods=['POST'])
+def process():
+
+	email = request.form['email']
+	name = request.form['name']
+
+
+	if name and email:
+		newName = 'Submited'
+
+		return jsonify({'name' : newName})
+
+	return jsonify({'error' : 'Missing data!'})
+
+@app.route("/home.html")
 def home():
-    return render_template("new.html")
+    return render_template("home.html")
 
-@app.route( '/Chat' )
+@app.route( '/chat.html' )
 def Chat():
-  return render_template( './TravelChat.html' )
+  return render_template( '/chat.html' )
 
 def messageRecived():
     print( 'message was received!!!' )
