@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
@@ -8,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="static/css/style1.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -18,64 +20,110 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
+
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="TE-top">
   <div class="TE-bar TE-white TE-padding TE-card" style="letter-spacing:4px;">
-    <a href="#home" class="TE-bar-item TE-button">Gourmet au Catering</a>
+    <a href="home.html" class="TE-bar-item TE-large TE-button">Travel Enthusiasts</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="TE-right TE-hide-small">
-      <a href="#about" class="TE-bar-item TE-button">About</a>
-      <a href="#gallery" class="TE-bar-item TE-button">Gallery</a>
-      <a href="#chat" class="TE-bar-item TE-button">Chat</a>
-      <a href="#contact" class="TE-bar-item TE-button">Contact</a>
+      <a href="home.html" class="TE-bar-item TE-button">About</a>
+      <a href="gallery.html" class="TE-bar-item TE-button">Gallery</a>
+      <a href="chat.html" class="TE-bar-item TE-button">Chat</a>
+      <a href="contact.html" class="TE-bar-item TE-button">Contact</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="TE-container TE-center TE-padding-48">
+<header class="TE-container TE-center TE-padding-32"></header>
 
-<!-- The Contact Section -->
-  <div class="TE-container TE-content TE-padding-64" style="max-width:800px" id="contact">
-    <h2 class="TE-wide TE-center">CONTACT</h2>
-    <p class="TE-opacity TE-center"><i>Fan?Need help with Travel info? Drop a note!</i></p>
-    <div class="TE-row TE-padding-32">
-      <div class="TE-col m6 TE-large TE-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Dublin, IE<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="TE-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="TE-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="TE-half">
-              <input class="TE-input TE-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="TE-half">
-              <input class="TE-input TE-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="TE-input TE-border" type="text" placeholder="Subject" required name="Subject">
-          <input class="TE-input TE-border" type="text" placeholder="Message" required name="Message">
-          <button class="TE-button TE-black TE-section TE-right" type="submit">SEND</button>
-        </form>
-      </div>
+<body>
+<div class="container">
+	<!-- The Contact Section -->
+	  <div class="TE-container TE-content TE-padding-64" style="max-width:800px" id="contact">
+	    <h2 class="TE-wide TE-center">CONTACT</h2>
+	    <p class="TE-opacity TE-center"><i>Fan?Need help with Travel info? Drop a note!</i></p>
+	    <div class="TE-row TE-padding-32">
+	      <div class="TE-col m6 TE-large TE-margin-bottom">
+	        <i class="fa fa-map-marker" style="width:30px"></i> Dublin, IE<br>
+	        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+	        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+	      </div>
+<div class="TE-col m6">
+	<form class="form-inline">
+		<div class="TE-row-padding" style="margin:0 -16px 8px -16px">
+	  <div class="TE-half">
+	    <label class="sr-only" for="emailInput">Email address</label>
+	    <input type="email" class="TE-input TE-border" id="emailInput" placeholder="Email">
+	  </div>
+    <div class="TE-half">
+	    <label class="sr-only" for="subjectInput">Subject</label>
+	    <input type="text" class="TE-input TE-border" id="subjectInput" placeholder="Subject">
+	  </div>
+		</div>
+    <div class="TE-full">
+      <label class="sr-only" for="nameInput">Name</label>
+      <input type="text" class="TE-input TE-border" id="nameInput" placeholder="Message">
     </div>
-  </div>
+		<br>
 
-  <!-- Footer -->
-  <footer class="TE-container TE-padding-64 TE-center TE-opacity TE-light-grey TE-xlarge">
-    <i class="fa fa-facebook-official TE-hover-opacity"></i>
-    <i class="fa fa-instagram TE-hover-opacity"></i>
-    <i class="fa fa-snapchat TE-hover-opacity"></i>
-    <i class="fa fa-pinterest-p TE-hover-opacity"></i>
-    <i class="fa fa-twitter TE-hover-opacity"></i>
-    <i class="fa fa-linkedin TE-hover-opacity"></i>
-    <p class="TE-medium">Powered by <a href="https://www.TEschools.com/TEcss/default.asp" target="_blank">TE.css</a></p>
-  </footer>
+	  <button type="submit" class="TE-button TE-green TE-section TE-centre">Submit</button>
+	</form>
+
+	<br>
+	<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="TE-container TE-padding-64 TE-center TE-opacity TE-light-grey TE-xlarge">
+	<a href="https://www.facebook.com/" class="fa fa-facebook TE-hover-opacity "target="_blank" ></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram TE-hover-opacity "target="_blank" ></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest-p TE-hover-opacity "target="_blank" ></a>
+  <a href="https://www.twitter.com/" class="fa fa-twitter TE-hover-opacity "target="_blank" ></a>
+  <a href="https://www.linkedin.com/" class="fa fa-linkedin TE-hover-opacity "target="_blank" ></a>
+	<p class="TE-medium">Powered by <a href="contact.html" target="_blank" >Travel Enthusiasts (TE).Inc</a></p>
+</footer>
 
 </body>
 </html>
+
+<script>
+
+$(document).ready(function() {
+
+	$('form').on('submit', function(event) {
+
+		$.ajax({
+			data : {
+				name : $('#nameInput').val(),
+				email : $('#emailInput').val(),
+			},
+			type : 'POST',
+			url : '/process'
+		})
+		.done(function(data) {
+
+			if (data.error) {
+				$('#errorAlert').text(data.error).show();
+				$('#successAlert').hide();
+			}
+			else {
+				$('#successAlert').text(data.name).show();
+				$('#errorAlert').hide();
+			}
+
+		});
+
+		event.preventDefault();
+
+	});
+
+});
+
+</script>
