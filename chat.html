@@ -1,121 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title> Chat </title>
+<title> Chat </title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/css/style1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/style1.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.msg_bbl {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #555;
+  margin-bottom: 5px;
+}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
 
-    <style>
-      div.msg_bbl {
-        background-color: #ddd;
-        padding: 5px 10px;
-        border-radius: 10px;
-        color: #555;
-        margin-bottom: 5px;
-      }
-      body {font-family: "Lato", sans-serif}
-      .mySlides {display: none}
-      </style>
-      <style>
-      body {font-family: "Times New Roman", Georgia, Serif;}
-      h1,h2,h3,h4,h5,h6 {
-          font-family: "Playfair Display";
-          letter-spacing: 5px;
-      }
-    </style>
+<!-- Navbar (sit on top) -->
+<div class="TE-top">
+  <div class="TE-bar TE-white TE-padding TE-card" style="letter-spacing:4px;">
+    <a href="home.html" class="TE-bar-item TE-button TE-large"><b>Travel Enthusiasts</b></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="TE-right TE-hide-small">
+      <a href="home.html" class="TE-bar-item TE-button">About</a>
+      <a href="gallery.html" class="TE-bar-item TE-button">Gallery</a>
+      <a href="chat.html" class="TE-bar-item TE-button">Chat</a>
+      <a href="contact.html" class="TE-bar-item TE-button">Contact</a>
+    </div>
+  </div>
+</div>
 
-  </head>
-  <body>
-
-    <!-- Navbar (sit on top) -->
-    <div class="TE-top">
-      <div class="TE-bar TE-white TE-padding TE-card" style="letter-spacing:4px;">
-        <a href="home.html" class="TE-bar-item TE-button TE-large">Travel Enthusiasts</a>
-        <!-- Right-sided navbar links. Hide them on small screens -->
-        <div class="TE-right TE-hide-small">
-          <a href="home.html" class="TE-bar-item TE-button">About</a>
-          <a href="gallery.html" class="TE-bar-item TE-button">Gallery</a>
-          <a href="chat.html" class="TE-bar-item TE-button">Chat</a>
-          <a href="contact.html" class="TE-bar-item TE-button">Contact</a>
-        </div>
+<div class="text-center well"><b> Chat </b></div>
+  <div class="container">
+    <div class="col-sm-8">
+      <div class="no_message">
+        <h1 style='color: #ccc'>No message yet..</h1>
+        <div class="message_holder"></div>
       </div>
     </div>
-
-  <body>
-
-    <div class="text-center well"><b> Chat </b></div>
-
-    <div class="container">
-      <div class="col-sm-8">
-        <div class="no_message">
-          <h1 style='color: #ccc'>No message yet..</h1>
-          <div class="message_holder"></div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <form action="" method="POST">
-          <b>Type your message below <span class="glyphicon glyphicon-arrow-down"></span></b>
-          <div class="clearfix" style="margin-top: 5px;"></div>
-          <input type="text" class="username form-control" placeholder="User Name">
-          <div style="padding-top: 5px;"></div>
-          <input type="text" class="message form-control" placeholder="Messages">
-          <div style="padding-top: 5px;"></div>
-          <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-send"></span> Send</button>
-        </form>
-      </div>
+    <div class="col-sm-4">
+      <form method="POST">
+        <b>To Chat with other Travel Enthusiasts type your message below <span class="glyphicon glyphicon-arrow-down"></span></b>
+        <div class="clearfix" style="margin-top: 5px;"></div>
+        <input type="text" class="username form-control" placeholder="User Name">
+        <div style="padding-top: 5px;"></div>
+        <input type="text" class="message form-control" placeholder="Messages">
+        <div style="padding-top: 5px;"></div>
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-send"></span> Send</button>
+      </form>
     </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Footer -->
-    <footer class="TE-container TE-padding-64 TE-center TE-opacity TE-light-grey TE-xlarge">
-    	<a href="https://www.facebook.com/" class="fa fa-facebook TE-hover-opacity "target="_blank" ></a>
-      <a href="https://www.instagram.com/" class="fa fa-instagram TE-hover-opacity "target="_blank" ></a>
-      <a href="https://www.pinterest.com/" class="fa fa-pinterest-p TE-hover-opacity "target="_blank" ></a>
-      <a href="https://www.twitter.com/" class="fa fa-twitter TE-hover-opacity "target="_blank" ></a>
-      <a href="https://www.linkedin.com/" class="fa fa-linkedin TE-hover-opacity "target="_blank" ></a>
-    	<p class="TE-medium">Powered by <a href="contact.html" target="_blank" >Travel Enthusiasts (TE).Inc</a></p>
-    </footer>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Footer -->
+<footer class="TE-container TE-padding-64 TE-center TE-opacity TE-light-grey TE-xlarge">
+  <a href="https://www.facebook.com/" class="fa fa-facebook TE-hover-opacity" target="_blank" ></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram TE-hover-opacity" target="_blank" ></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest-p TE-hover-opacity" target="_blank" ></a>
+  <a href="https://www.twitter.com/" class="fa fa-twitter TE-hover-opacity" target="_blank" ></a>
+  <a href="https://www.linkedin.com/" class="fa fa-linkedin TE-hover-opacity" target="_blank" ></a>
+  <p class="TE-medium">Powered by <a href="contact.html" target="_blank" >Travel Enthusiasts (TE).Inc</a></p>
+</footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
-    <script>
-      var socket = io.connect( 'http://' + document.domain + ':' + location.port )
-      // broadcast a message
-      socket.on( 'connect', function() {
-        socket.emit( 'my event', {
-          data: 'User Connected'
-        } )
-        var form = $( 'form' ).on( 'submit', function( e ) {
-          e.preventDefault()
-          let user_name = $( 'input.username' ).val()
-          let user_input = $( 'input.message' ).val()
-          socket.emit( 'my event', {
-            user_name : user_name,
-            message : user_input
-          } )
-          // empty the input field
-          $( 'input.message' ).val( '' ).focus()
-        } )
-      } )
-
-      // capture message
-      socket.on( 'my response', function( msg ) {
-        console.log( msg )
-        if( typeof msg.user_name !== 'undefined' ) {
-          $( 'h1' ).remove()
-          $( 'div.message_holder' ).append( '<div class="msg_bbl"><b style="color: #000">'+msg.user_name+'</b> '+msg.message+'</div>' )
-        }
-      } )
-    </script>
-  </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+<script>
+var socket = io.connect( 'http://' + document.domain + ':' + location.port )
+// broadcast a message
+socket.on( 'connect', function() {
+  socket.emit( 'my event', {
+    data: 'User Connected'
+  } )
+  var form = $( 'form' ).on( 'submit', function( e ) {
+    e.preventDefault()
+    let user_name = $( 'input.username' ).val()
+    let user_input = $( 'input.message' ).val()
+    socket.emit( 'my event', {
+      user_name : user_name,
+      message : user_input
+    } )
+    // empty the input field
+    $( 'input.message' ).val( '' ).focus()
+  } )
+} )
+// capture message
+socket.on( 'my response', function( msg ) {
+  console.log( msg )
+  if( typeof msg.user_name !== 'undefined' ) {
+    $( 'h1' ).remove()
+    $( 'div.message_holder' ).append( '<div class="msg_bbl"><b style="color: #000">'+msg.user_name+'</b> '+msg.message+'</div>' )
+  }
+} )
+</script>
+</body>
 </html>
