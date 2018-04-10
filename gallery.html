@@ -198,10 +198,16 @@ h1,h2,h3,h4,h5,h6 {
 
     <!-- Introduction menu -->
     <div class="TE-col l4">
-      we will put twitter api here
+      <div class="TE-card-4 TE-margin TE-white">
+        <ul id="tweets">
+        {% for tweet in travel_tweets %}
+            <li><a>{{tweet}}</a></li>
+        {% endfor %}
+        </ul>
 
       <!-- END Introduction Menu -->
     </div>
+  </div>
 
     <!-- END GRID -->
   </div><br>
