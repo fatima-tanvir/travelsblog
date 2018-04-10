@@ -20,6 +20,12 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 5px;
 }
 </style>
+<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
 <body>
   <!-- Navbar (sit on top) -->
   <div class="TE-top">
@@ -42,8 +48,66 @@ h1,h2,h3,h4,h5,h6 {
   <div class="TE-row">
 
     <!-- Blog entries -->
-    <div class="TE-col l8 s12">
+    <div class="TE-col 24">
 
+      <div id="map"></div>
+      <script>
+      function initMap() {
+        //var dublin = {lat: 53.3498805, lng: -6.260310};
+        var mexico = {lat: 19.432608, lng: -99.133208};
+        var kyoto = {lat: 35.011636, lng: 135.768029};
+        var rome = {lat: 41.902783, lng: 12.496366};
+        var istanbul = {lat: 41.008238, lng: 28.978359};
+        var agra = {lat: 27.176670, lng: 78.008075};
+        var rio = {lat: -22.906847, lng: -43.172896};
+        var globe = {lat: 0, lng: 0};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 2,
+          center: globe
+        });
+        /*var marker = new google.maps.Marker({
+          position: dublin,
+          map: map
+        });*/
+        var marker = new google.maps.Marker({
+          position: mexico,
+          map: map,
+          title: 'Mexico City'
+        });
+        var marker = new google.maps.Marker({
+          position: kyoto,
+          map: map,
+          title: 'Kyoto'
+        });
+        var marker = new google.maps.Marker({
+          position: rome,
+          map: map,
+          title: 'Rome'
+        });
+        var marker = new google.maps.Marker({
+          position: istanbul,
+          map: map,
+          title: 'Istanbul'
+        });
+        var marker = new google.maps.Marker({
+          position: agra,
+          map: map,
+          title: 'Agra'
+        });
+        var marker = new google.maps.Marker({
+          position: rio,
+          map: map,
+          title: 'Rio de Janeiro'
+        });
+      }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMex7kxoXCH8I48ZX-UkjyMSy2kB4Yuz4&callback=initMap">
+      </script>
+    </div>
+
+    <div class="TE-col l8 s12">
       <!-- Blog entry -->
       <div class="TE-card-4 TE-margin TE-white">
         <img src="/static/images/Mexico.jpg" alt="mexico" style="width:100%">
